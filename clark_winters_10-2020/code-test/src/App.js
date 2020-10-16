@@ -1,24 +1,32 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+import logo from './img/mwi-logo-horizontal.png';
+
+const styles = {
+  app: {
+    backgroundColor: 'white'
+  },
+  header: {
+    height: '87px',
+    borderBottom: '2px solid black',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center'
+  },
+  logo: {
+    height: '64px'
+  }
+}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
+    <div style={styles.app}>
+      <header style={styles.header}>
+        <a target='_blank' rel='noopener noreferrer' href="https://midwesterninteractive.com/">
+          <img style={styles.logo} src={logo} alt='Midwestern Interactive logo' />
         </a>
       </header>
+      
     </div>
   );
 }
