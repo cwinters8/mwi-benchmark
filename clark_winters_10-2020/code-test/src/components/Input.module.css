@@ -1,0 +1,26 @@
+.text {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 24px;
+}
+.text > label {
+  text-align: start;
+}
+.text > p {
+  text-align: end;
+  color: red;
+  margin: 0px;
+  font-style: italic;
+  font-size: 15px;
+}
+.input {
+  height: 42px;
+  border: none;
+  margin-bottom: 15px;
+  font-size: 20px;
+  width: 100%;
+}
+textarea.input {
+  height: unset;
+  font-family: Arial, Helvetica, sans-serif;
+}
