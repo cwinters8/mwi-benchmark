@@ -49,6 +49,9 @@ test('should render elements', () => {
 
   // contact section
   getByText(/^contact$/i);
+
+  // footer
+  getByText(/^thanks for taking the midwestern interactive benchmark test\.$/i);
 });
 
 test('contact form can be filled out and submitted', () => {
@@ -68,4 +71,29 @@ test('contact form can be filled out and submitted', () => {
   const submitButton = getByText(/^submit$/i);
   userEvent.click(submitButton);
   expect(window.alert).toBeCalledWith('Contact form submitted successfully!');
+});
+
+test('contact form does not submit successfully with empty fields', () => {
+  const {getByText} = renderApp();
+  const submitButton = getByText(/^submit$/i);
+  userEvent.click(submitButton);
+  expect(window.alert).toBeCalledWith(
+    'Could not submit form. Please check your input and try again.'
+  );
+});
+
+test('only unique names are displayed after link is clicked', async () => {
+  const {getByText, findByText} = renderApp();
+  const link = getByText(/^link is clicked$/i);
+  userEvent.click(link);
+  await findByText('Matt Johnson');
+  await findByText('Bart Paden');
+  await findByText('Ryan Doss');
+  await findByText('Miguel Solano');
+  await findByText('Jordan Heigle');
+  await findByText('Tyler Viles');
+
+  // alert should display if user clicks link again
+  userEvent.click(link);
+  expect(window.alert).toBeCalledWith('Unique names are already being displayed');
 });
