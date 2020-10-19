@@ -17,6 +17,7 @@ Personality Result - 9
 ## Communication
 
 Subject: Requesting FTP Information
+
 Message:
 
 Hello,
