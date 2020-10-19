@@ -21,6 +21,7 @@
 .section {
   margin-left: 87px;
   margin-right: 87px;
+  line-height: 30px;
 }
 .section h1 {
   text-decoration: underline;
