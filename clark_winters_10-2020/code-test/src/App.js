@@ -68,8 +68,9 @@ const App = () => {
         <h1>Heading One</h1>
         <p>
           Remove the duplicates in 2 JavaScript objects and output the list of distinct names
-          in an unordered list when this <a href='/' onClick={handleLinkClick}>link is clicked</a>,
-          if the operation has been completed already notify the user that this has already been
+          in an unordered list when
+          this <a href='/' onClick={handleLinkClick}><strong>link is clicked</strong></a>, if
+          the operation has been completed already notify the user that this has already been
           done.
         </p>
         <div className='names'>

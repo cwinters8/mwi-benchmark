@@ -27,6 +27,22 @@ Clark Winters
 
 ## Code Test
 
-Any details you'd like to mention about your code test.
+One thing I don't feel great about with this is that I didn't know what sans-serif font was used in the mockup image. I decided to let the font family be Arial for the purposes of this exercise. I imagine that in real life, a designer would have provided the correct font family to use.
+
+[Live version here!](https://cwinters-mwi-benchmark.netlify.app/)
+
+You can also run the project locally:
+
+```sh
+cd code-test
+npm install
+npm start
+```
+
+To run tests:
+
+```sh
+npm test
+```
 
 ---
