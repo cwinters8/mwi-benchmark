@@ -38,6 +38,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, 388px);
   gap: 37px;
+  justify-content: center;
 }
 
 .contact {
