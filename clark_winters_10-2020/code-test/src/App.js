@@ -53,11 +53,13 @@ const App = () => {
         </a>
       </header>
       <div className='section'>
-        <h1>Heading One</h1>
-        <div className='grid'>
-          <ArticleBlock />
-          <ArticleBlock />
-          <ArticleBlock />
+        <div className="container">
+          <h1>Heading One</h1>
+          <div className='grid'>
+            <ArticleBlock />
+            <ArticleBlock />
+            <ArticleBlock />
+          </div>
         </div>
       </div>
       <div className='contact'>
